@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="NCC" href="NCC.html">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">PORT<span>FOLIO</span></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="#ncc" class="nav-link"><i class="fas fa-medal"></i> NCC</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                <li class="nav-item"><a href="#upcoming" class="nav-link"><i class="fas fa-rocket"></i> Upcoming</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="section-content">
+                <div class="hero">
+                    <div class="hero-text">
+                        <h1 class="animated-text">Hey, I'm <span class="highlight">Shivam Kumar</span></h1>
+                        <h2 class="typewriter">Aspiring Computer Software Enggineer</h2>
+                        <p class="hero-description">I create immersive digital experiences with modern web technologies. Welcome to my interactive portfolio.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn primary">View My Work</a>
+                            <a href="#contact" class="btn secondary">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="floating-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                            </div>
+                            <div class="profile-image"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-section">
+                    <h3 class="section-title">Core Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="95">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-card" data-skill="90">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-card" data-skill="85">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>React</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                        <div class="skill-card" data-skill="80">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <h4>UI/UX Design</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <span class="skill-percent">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NCC Section -->
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-content">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work and creations</p>
+                
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-featured online store with React, Node.js, and MongoDB.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="design">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Fitness App UI</h3>
+                            <p>Modern UI/UX design for a fitness tracking application.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">UI/UX</span>
+                                <span class="tech-tag">Prototype</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager App</h3>
+                            <p>Cross-platform task management application built with React Native.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>Interactive portfolio with animations and responsive design.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Projects Section -->
+        <section id="upcoming" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Upcoming Projects</h2>
+                <p class="section-subtitle">Projects I'm currently working on and planning</p>
+                
+                <div class="upcoming-projects">
+                    <div class="upcoming-card">
+                        <div class="upcoming-status">
+                            <span class="status in-progress">In Progress</span>
+                            <div class="progress-circle" data-progress="65">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                        <h3>AI-Powered Learning Platform</h3>
+                        <p>An adaptive learning system that personalizes educational content based on user performance.</p>
+                        <div class="upcoming-tech">
+                            <span>AI/ML</span>
+                            <span>Python</span>
+                            <span>React</span>
+                        </div>
+                        <div class="upcoming-timeline">
+                            <i class="far fa-calendar"></i>
+                            <span>Expected: Dec 2023</span>
+                        </div>
+                    </div>
+                    
+                    <div class="upcoming-card">
+                        <div class="upcoming-status">
+                            <span class="status planning">Planning</span>
+                            <div class="progress-circle" data-progress="25">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                        <h3>AR Interior Design App</h3>
+                        <p>Augmented Reality application for visualizing furniture and decor in real spaces.</p>
+                        <div class="upcoming-tech">
+                            <span>AR</span>
+                            <span>Unity</span>
+                            <span>Blender</span>
+                        </div>
+                        <div class="upcoming-timeline">
+                            <i class="far fa-calendar"></i>
+                            <span>Expected: Mar 2024</span>
+                        </div>
+                    </div>
+                    
+                    <div class="upcoming-card">
+                        <div class="upcoming-status">
+                            <span class="status concept">Concept</span>
+                            <div class="progress-circle" data-progress="10">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                        <h3>Blockchain Voting System</h3>
+                        <p>Secure and transparent digital voting system using blockchain technology.</p>
+                        <div class="upcoming-tech">
+                            <span>Blockchain</span>
+                            <span>Solidity</span>
+                            <span>Web3.js</span>
+                        </div>
+                        <div class="upcoming-timeline">
+                            <i class="far fa-calendar"></i>
+                            <span>Expected: Jun 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ideas-section">
+                    <h3>Future Ideas</h3>
+                    <div class="ideas-container">
+                        <div class="idea">Interactive Data Visualization Tool</div>
+                        <div class="idea">Smart Home Automation Dashboard</div>
+                        <div class="idea">Sustainable Energy Tracking App</div>
+                        <div class="idea">Virtual Reality Museum Tours</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>alex.morgan@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Alex Morgan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
